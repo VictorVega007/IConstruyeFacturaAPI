@@ -3,7 +3,7 @@ using IConstruye.Factura.Core.Interfaces;
 
 namespace IConstruye.Factura.Infrastructure.Validators;
 
-public class XmlInvoiceValidator(ICertificateProvider certificateProvider) : IXmlInvoiceValidator
+public class XmlInvoiceValidator : IXmlInvoiceValidator
 {
     public async Task<(bool IsValid, string? ErrorMessage)> ValidateXmlAsync(string xmlContent)
     {

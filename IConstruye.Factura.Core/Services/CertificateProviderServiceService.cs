@@ -2,13 +2,13 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using IConstruye.Factura.Core.Interfaces;
 
-namespace IConstruye.Factura.Infrastructure.Helpers;
+namespace IConstruye.Factura.Core.Services;
 
-public class CertificateProvider :  ICertificateProvider
+public class CertificateProviderServiceService :  ICertificateProviderService
 {
     private readonly X509Certificate2 _certificate;
 
-    public CertificateProvider()
+    public CertificateProviderServiceService()
     {
         using var rsa = RSA.Create(2048);
         var request = new CertificateRequest("CN=FakeDTECertificate", rsa, HashAlgorithmName.SHA256,

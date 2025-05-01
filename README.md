@@ -101,7 +101,7 @@ IConstruye.Factura.sln
 2. Ir al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd {directorio del proyecto}
 ```
 
 3. Levantar la base de datos con Docker

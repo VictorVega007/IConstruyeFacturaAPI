@@ -84,7 +84,7 @@ public class Startup(IConfiguration configuration)
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         services.AddScoped<IXmlInvoiceValidator, XmlInvoiceValidator>();
         services.AddSingleton<IInvoiceUrlService, InvoiceUrlService>();
-        services.AddSingleton<ICertificateProvider, CertificateProvider>();
+        services.AddSingleton<ICertificateProviderService, CertificateProviderServiceService>();
 
         services.AddAuthentication(o =>
         {
