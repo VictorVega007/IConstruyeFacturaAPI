@@ -41,8 +41,6 @@ public class InvoiceContextSeed
             Issuer = "Empresa A",
             Receiver = "Cliente B",
             Amount = 100000,
-            // Date = DateTime.UtcNow.ToString("s"),
-            // ExpiresAt = DateTime.UtcNow.AddMinutes(5).ToString("s"),
             OriginalXml = "<Factura>...</Factura>"
         };
     }
