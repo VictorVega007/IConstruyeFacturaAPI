@@ -95,7 +95,7 @@ IConstruye.Factura.sln
 1. Clonar repositorio
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/VictorVega007/IConstruyeFacturaAPI.git
 ```
 
 2. Ir al directorio del proyecto
